@@ -1,0 +1,52 @@
+<div class="leftSide">
+    <img src="img/browsecompany.png">
+    <div class="searchBars">
+        <img src="img/mGlass.png"> 
+        <input id="prependedInput"  type="text" ng-model="searching" placeholder="Username">
+    </div>
+    <div class="infoHolder">
+        <table>
+            <tr ng-repeat="item in companies| filter:searching |orderBy:'cname'"> 
+                <td>{{item.cname}}</td>
+                <td class="centerNum">{{item.floor}}</td>     
+                <td class="centerNum" >{{item.suite}}</td> 
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+<div class="rightSide">
+    <a href="#/home"> <img src="img/goBack.png"></a>
+    <div class="filterholder">
+        <div class="letterButton" ng-model="searching" btn-radio="'A'">A</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'B'">B</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'C'">C</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'D'">D</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'E'">E</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'F'">F</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'G'">G</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'H'">H</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'I'">I</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'J'">J</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'K'">K</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'L'">L</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'M'">M</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'N'">N</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'O'">O</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'P'">P</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'Q'">Q</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'R'">R</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'S'">S</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'T'">T</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'U'">U</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'V'">V</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'W'">W</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'X'">X</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'Y'">Y</div> 
+        <div class="letterButton" ng-model="searching" btn-radio="'Z'">Z</div>  
+
+    </div>
+
+</div>

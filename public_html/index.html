@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="myApp"> 
+    <head>
+        <title>Directory</title>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" /> 
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="marketing"> 
+             
+            
+        </div>
+        <div ng-view ng-controller="individuals" ng-animate="{enter:'animated delayeds rollIn',leave:'animated rollOut'}" class="maincontent"> 
+
+        </div>
+        <img src="img/footer.png">
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/ang/app.js"></script>
+        <script src="js/ang/controllers.js"></script>
+        <script src="js/ang/directives.js"></script>
+        <script src="js/ang/filters.js"></script>
+        <script src="js/ang/services.js"></script>        
+        <script src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>
+    </body>
+
+</html>
